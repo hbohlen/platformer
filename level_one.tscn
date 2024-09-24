@@ -1,3 +1,13 @@
-[gd_scene format=3 uid="uid://bhg5ovivvlld5"]
+[gd_scene load_steps=3 format=4 uid="uid://bhg5ovivvlld5"]
+
+[ext_resource type="PackedScene" uid="uid://d1nf503dk76bn" path="res://player.tscn" id="1_278mm"]
+[ext_resource type="PackedScene" uid="uid://db5bgng7rggfq" path="res://tile_map_layer.tscn" id="2_4ura5"]
 
 [node name="LevelOne" type="Node2D"]
+
+[node name="Player" parent="." instance=ExtResource("1_278mm")]
+position = Vector2(148, 153)
+
+[node name="TileMapLayer" parent="." instance=ExtResource("2_4ura5")]
+position = Vector2(106, 4)
+tile_map_data = PackedByteArray("AAD//wUAAAABAAMAAAAAAAUAAAACAAMAAAABAAUAAAADAAMAAAACAAUAAAAEAAMAAAADAAUAAAABAAMAAAAEAAUAAAACAAMAAAAFAAUAAAADAAMAAAAGAAUAAAAEAAMAAAAHAAUAAAABAAMAAAAIAAUAAAACAAMAAAAJAAUAAAADAAMAAAAKAAUAAAAEAAMAAAA=")
